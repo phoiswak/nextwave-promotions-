@@ -1,0 +1,248 @@
+/* About Us main content styling like tradeway.co.za/about-tradeway */
+
+/* Container */
+.about-us-container {
+  max-width: 900px;       /* similar width to Tradeway */
+  margin: 3rem auto;      /* centered with top/bottom spacing */
+  padding: 0 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #223a66;         /* a dark blue tone for text */
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* Headings */
+.about-us-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a2c5b;         /* deeper blue */
+  line-height: 1.1;
+}
+
+.about-us-container h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #2a69ac;  /* subtle blue bar on left */
+  padding-left: 0.75rem;
+  color: #2a69ac;
+}
+
+/* Paragraphs */
+.about-us-container p {
+  margin-bottom: 1.25rem;
+  color: #2f3e59;
+}
+
+/* Lists */
+.about-us-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.about-us-container ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.7rem;
+  color: #324a7a;
+  font-weight: 500;
+}
+
+.about-us-container ul li::before {
+  content: "•";               /* custom bullet */
+  color: #2a69ac;             /* blue bullet */
+  position: absolute;
+  left: 0;
+  font-size: 1.3rem;
+  line-height: 1;
+  top: 0;
+}
+
+.about-us-container h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 600;
+  color: #2a69ac; /* blue heading */
+  margin-top: 2.5rem;
+}
+
+.about-us-container h2 .icon {
+  color: #1a2c5b;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+/* ABOUT US GRID STYLE */
+        .about-us-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(min(620px, 100%), 1fr));
+          gap: 2rem;
+          margin: 2rem auto;
+          max-width: 1200px;
+          padding: 0 1rem;
+        }
+
+        .about-us-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(40, 77, 192, 0.2);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .service-icon {
+            font-size: 2.4rem;
+            color: #2a69ac; /* NextWave primary color */
+        }
+        .service-icon1 {
+            font-size: 2.4rem;
+            color: #ffffff; /* NextWave secondary color */
+        }
+
+        .about-us-card h3 {
+            color: #1a2c5b;
+            font-weight: 700;
+        }
+
+        .about-us-card p,
+        .about-us-card ul {
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .about-us-card ul {
+            padding-left: 1.2rem;
+            list-style-type: disc;
+        }
+
+        /* OUR STORY / MISSION / VISION SECTION */
+        .story-section {
+            background-color: #b2c3d7;
+            padding: 4rem 1rem;
+            max-width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .icon-background {
+          background: linear-gradient(135deg, #000428, #004e92);
+          padding: 2rem;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          margin: 0 auto;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px;
+          animation: floatIcon 3s ease-in-out infinite;
+      	}
+
+      .icon-background1 {	
+        background: linear-gradient(135deg, #000428, #004e92);
+        padding: 2rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        animation: floatIcon 3s ease-in-out infinite;
+      }
+
+      .icon-background2 {
+          background: linear-gradient(135deg, #000428, #004e92);
+          padding: 2rem;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          margin: 0 auto;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px;
+          animation: floatIcon 3s ease-in-out infinite;
+      }
+
+        /* Floating animation for icons */
+        @keyframes floatIcon {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Make icon itself colorful or white */
+        .service-icon i {
+            font-size: 2.4rem;
+            color: #fff; /* white stands out on gradient */
+        }
+
+
+        .story-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 0px;
+            box-shadow: 0 0 10px rgb(0 0 0 / 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .story-card .service-icon {
+            font-size: 2rem;
+            color: #2a69ac;
+        }
+
+        .story-card h3 {
+          color: #1a2c5b;
+          font-weight: 700;
+          padding: 0 1rem;
+          text-align: center; /* ADD THIS */
+          width: 100%;         /* ADD THIS */
+          }
+
+        .story-card p {
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.5;
+            padding: 0 1rem;
+            margin-bottom: 2rem;
+        }
+
+
+/* Strong inside lists for emphasis */
+.about-us-container ul li strong {
+  color: #1a2c5b;
+}
+
+/* Responsive tweak */
+@media (max-width: 600px) {
+  .about-us-container {
+    padding: 0 1rem;
+  }
+
+  .about-us-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-us-container h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-grid {
+    grid-template-columns: 1fr;
+    padding: 0 0.75rem;
+  }
+
+  .about-us-card {
+    padding: 1.5rem;
+  }
+}

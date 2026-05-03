@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>NextWave Promotions Pamphlet</title>
+
+    <style>
+@page {
+  size: A4;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* A4 TRI-FOLD LAYOUT */
+.pamphlet {
+  width: 210mm;
+  height: 297mm;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/* PANELS */
+.panel {
+  padding: 15mm;
+  background: url("abstract.jpg") center center / cover no-repeat;
+  border: 0.4mm solid #dddddd;
+}
+
+/* COVER PANEL */
+.cover {
+  color: white;
+  background:
+    linear-gradient(rgba(11,77,138,0.85), rgba(8,52,94,0.85)),
+    url("abstract.jpg") center center / cover no-repeat;
+}
+
+/* TEXT */
+h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+p, li {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+/* IMAGES */
+.logo img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.photo img {
+  width: 100%;
+  margin: 12px 0;
+  border-radius: 4px;
+}
+
+/* CONTACT */
+.contact {
+  margin-top: 20px;
+  font-size: 12px;
+}
+</style>
+  </head>
+
+  <body>
+
+    <div class="pamphlet">
+
+      <!-- FRONT COVER -->
+      <div class="panel cover">
+        <div class="logo">
+          <img src="NextWavePromotion.jpeg" alt="NextWave Promotions Logo">
+        </div>
+
+        <h2>Ride the Next Wave of Brand Visibility</h2>
+
+        <p>
+          Results-driven brand activations that connect businesses
+          with real consumers through strategic, on-the-ground engagement
+          and digital amplification.
+        </p>
+
+        <div class="contact">
+          📞 078 389 4384<br>
+          ✉ info@nextwavepromotions.co.za<br>
+          🌐 www.nextwavepromotions.co.za
+        </div>
+      </div>
+
+      <!-- ABOUT US -->
+      <div class="panel">
+        <h2>About Us</h2>
+
+        <p>
+          NextWave Promotions is a full-service brand activation and
+          experiential marketing agency based in South Africa.
+        </p>
+
+        <p>
+          We specialize in bringing brands to life through professionally
+          executed promotional campaigns.
+        </p>
+
+        <div class="photo">
+          <img src="team.jpeg" alt="NextWave Brand Ambassadors">
+        </div>
+      </div>
+
+      <!-- WHY CHOOSE US -->
+      <div class="panel">
+        <h2>Why Choose NextWave</h2>
+
+        <ul>
+          <li>Strategic, results-driven activations</li>
+          <li>Professionally trained brand ambassadors</li>
+          <li>Strong operational management & reporting</li>
+          <li>Seamless field & digital integration</li>
+          <li>Flexible, tailored solutions</li>
+        </ul>
+      </div>
+
+      <!-- WHAT WE DO -->
+      <div class="panel">
+        <h2>What We Do</h2>
+
+        <ul>
+          <li><strong>Brand Activations</strong> – Live engagement</li>
+          <li><strong>Content Creation</strong> – Campaign visuals</li>
+          <li><strong>Influencer & Ambassador Campaigns</strong></li>
+        </ul>
+      </div>
+
+      <!-- FIELD SERVICES -->
+      <div class="panel">
+        <h2>Field Services</h2>
+
+        <ul>
+          <li>Product demos & sampling</li>
+          <li>Ambassador-led content</li>
+          <li>Influencer activations</li>
+        </ul>
+      </div>
+
+      <!-- BRAND VALUES -->
+      <div class="panel">
+        <h2>Our Brand Values</h2>
+
+        <ul>
+          <li>Professionalism</li>
+          <li>Creativity</li>
+          <li>Authentic Engagement</li>
+          <li>Reliability</li>
+          <li>Impact</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </body>
+</html>
