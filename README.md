@@ -36,21 +36,21 @@ NextWave Promotions is a creative marketing and promotions website designed to s
 
 ## Project Structure
 NextWavePromotion website/
-│
-├── index / homepage files
-├── About-us.html
-├── branding-services.html
-├── influencer-management.html
-├── content-creations.html
-├── outdoor_advertising.html
-├── gallery.html
-├── faq.html
-├── privacy-policy.html
-├── terms-conditions.html
-│
-├── images/
-├── Gallery/
-├── videos/
-├── pamphlet/
-│
-└── (CSS files)
+
+- index / homepage files
+-  About-us.html
+- branding-services.html
+- influencer-management.html
+- content-creations.html
+- outdoor_advertising.html
+- gallery.html
+- faq.html
+- privacy-policy.html
+- terms-conditions.html
+
+- images/
+- Gallery/
+- videos/
+- pamphlet/
+
+- (CSS files)
