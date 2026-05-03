@@ -1,0 +1,221 @@
+/* Gallery Header */
+.gallery-header {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.gallery-header h1 {
+    font-size: 40px;
+    color: #1b1660;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Image Cards Section */
+.image-cards-section {
+    padding: 30px 0;
+}
+
+.image-cards-section h2 {
+    font-size: 32px;
+    color: #1b1660;
+    margin-bottom: 30px;
+}
+
+/* Cards container using CSS grid for exactly 4 cards per row */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* exactly 4 columns */
+    gap: 20px;
+    margin-bottom: 40px; /* space between sections */
+}
+
+/* Make it responsive */
+@media (max-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .cards-container {
+        grid-template-columns: 1fr; /* 1 per row on mobile */
+    }
+}
+
+
+/* Individual card */
+.card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3; /* keeps consistent card height */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay that appears on hover */
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(27, 22, 96, 0.7); /* dark purple overlay */
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-overlay p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery-header h1 {
+        font-size: 32px;
+    }
+    .image-cards-section h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-header h1 {
+        font-size: 28px;
+    }
+    .image-cards-section h2 {
+        font-size: 24px;
+    }
+}
+
+/* Section heading with centered logo */
+.project-section h2 {
+    display: flex;
+    justify-content: center; /* centers content horizontally */
+    align-items: center;     /* centers content vertically */
+    font-size: 32px;         /* bigger text */
+    margin-bottom: 20px;
+    gap: 15px;               /* space between logo and text */
+    font-weight: bold;
+}
+
+/* ================================
+   Company Section Logo (RECTANGLE)
+================================ */
+.section-logo {
+    width: 280px;          /* rectangle width */
+    height: 120px;         /* rectangle height */
+
+    padding: 18px 22px;
+    background: #ffffff;
+
+    border-radius: 14px;   /* soft rectangle corners */
+    object-fit: contain;   /* keeps original logo shape & color */
+
+    box-shadow: 0 8px 25px rgba(20,30,10,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-logo:hover {
+    animation: logoWiggle 0.6s ease-in-out;
+    box-shadow: 0 12px 30px rgba(20,30,10,0.12);
+}
+
+@keyframes logoWiggle {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(1.5deg); }
+    50%  { transform: rotate(-1.5deg); }
+    75%  { transform: rotate(1deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+
+@media (max-width: 768px) {
+    .section-logo {
+        width: 220px;
+        height: 100px;
+        padding: 14px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-logo {
+        width: 190px;
+        height: 90px;
+    }
+}
+
+/* Cards container using CSS grid for 4 per row */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px; /* space between sections */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Individual card styling */
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(27, 22, 96, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+}
